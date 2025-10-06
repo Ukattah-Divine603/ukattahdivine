@@ -1,9 +1,16 @@
 import Icon from "../components/Icon";
+import SEO from '../components/SEO'
 
 export default function About() {
   return (
     <>
-      <div className="about-container">
+
+  <SEO
+        title="About"
+        description="Learn more about Ukattah Divine (Codevine), a passionate front-end developer focused on building responsive, modern websites."
+      />
+
+      <div id="about" className="about-container">
         <div className="about-detail">
           <h4>About Me</h4>
           <p>
@@ -80,7 +87,7 @@ export default function About() {
           </div>
         </div>
         <div className="experience">
-          <h6>EXPERIENCE</h6>
+          <h6>EXPERIENCE | 1.6 YEARS | 10+ COMPLETED PROJECTS</h6>
           <p>Front-End Developer</p>
           <h6>2024 - Present</h6>
           <h5>

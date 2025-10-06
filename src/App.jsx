@@ -8,8 +8,12 @@ function App() {
   return (
     <>
       <Header />
-      <Aside />
-      <Home />
+      <div className="body-components">
+         <Aside />
+           <Home />
+      </div>
+     
+    
 
     </>
   )

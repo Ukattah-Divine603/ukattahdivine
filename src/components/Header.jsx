@@ -44,6 +44,7 @@ function Header() {
         <a href="#contact" onClick={() => setIsOpen(false)}>
           Contact
         </a>
+        
       </nav>
     </header>
   );

@@ -12,7 +12,8 @@ import dbs from '/src/images/db-1.png'
 export default function Projects() {
     return(
         <>
-        <div className="project-container">
+        
+        <div id="projects" className="project-container">
             <h1>
                 My Projects
             </h1>

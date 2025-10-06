@@ -1,12 +1,27 @@
 import Frameworks from '../components/Frameworks'
+import SEO from '../components/SEO'
+import profile from '/src/images/profile-picture.jpeg'
 function Hero() {
     return(
         <>
-        <main className="hero">
+
+    <SEO
+        title="Home"
+        description="Discover projects and creative work by Ukattah Divine — a front-end developer from Aba, Nigeria."
+        image="/meta-thumbnail.png"
+      />
+
+        <main id="hero" className="hero">
 <div className="black-cover">
  
+ <div className="mobile-image">
+    <img src={profile} alt="" srcset="" />
+ </div>
+
     <div className="left-sed">
-<p>KONICHIWA</p>
+<p>KONICHIWA<br/>
+HAJIMEMASHITE!
+</p>
 <h1>My Name Is</h1>
 <h3>Ukattah Divine<br/>
 A Front-End Developer</h3>
@@ -16,10 +31,11 @@ A Front-End Developer</h3>
 <div className="framework-list">
 <Frameworks name="HTML"/>
 <Frameworks name="CSS"/>
-<Frameworks name="JavaScript"/>
-<Frameworks name="React"/>
-<Frameworks name="Tailwind CSS"/>
-<Frameworks name="Git"/>
+<Frameworks name="JAVASCRIPT"/>
+<Frameworks name="REACT.JS"/>
+<Frameworks name="TAILWIND CSS"/>
+<Frameworks name="GIT"/>
+<Frameworks name="WORDPRESS"/>
 
 </div>
     </div>

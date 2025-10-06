@@ -7,7 +7,7 @@ export default function Card(props) {
         <>
         <div className="card">
              <div className="img-cont">
-                    <img src={props.image} alt="Professional portrait of Ukattah Divine, a front-end developer from Aba" />
+<img src={props.image} alt={props.alt} />
                 </div>
         <div className="intro-text">
             <h5>{props.title}</h5>
@@ -45,10 +45,7 @@ export default function Card(props) {
         </div>
 
         </div>
-              <div className="buttons">
-               <Button text="Download CV" />
-               <Button text="View Projects" />
-            </div>
+  
 
            
        
