@@ -889,6 +889,43 @@ footer{
     transition: 0.5s ease-in-out;
   }
 
+  .mobile{
+    display: flex;
+  }
+
+  .mobile a{
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.rex{
+      border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.rex:hover{
+    background-color: black;
+  color: white;
+}
+
+.dash{
+    border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.dash:hover{
+        border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
   .nav-menu {
     display: none;
     width: 100%;
