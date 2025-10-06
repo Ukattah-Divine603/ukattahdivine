@@ -1,15 +1,10 @@
 import Frameworks from '../components/Frameworks'
-import SEO from '../components/SEO'
 import profile from '/src/images/profile-picture.jpeg'
 function Hero() {
     return(
         <>
 
-    <SEO
-        title="Home"
-        description="Discover projects and creative work by Ukattah Divine — a front-end developer from Aba, Nigeria."
-        image="/meta-thumbnail.png"
-      />
+   
 
         <main id="hero" className="hero">
 <div className="black-cover">

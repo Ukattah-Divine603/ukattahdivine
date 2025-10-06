@@ -1,18 +1,12 @@
 import Button from "./Button"
 import logo from '/src/images/cv.png'
-import { Helmet } from 'react-helmet-async';
+
 import Card from "./Card"
 import profile from '/src/images/profile-picture.jpeg'
 export default function Aside() {
     return(
         <>
-           <Helmet>
-        <title>Home | Ukattah Divine (Codevine) Portfolio</title>
-        <meta
-          name="description"
-          content="Discover projects and creative work by Ukattah Divine — a front-end developer from Aba, Nigeria."
-        />
-      </Helmet>
+        
             <aside className="aside">
                 <Card 
   image={profile} 

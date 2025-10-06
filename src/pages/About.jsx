@@ -1,14 +1,10 @@
 import Icon from "../components/Icon";
-import SEO from '../components/SEO'
 
 export default function About() {
   return (
     <>
 
-  <SEO
-        title="About"
-        description="Learn more about Ukattah Divine (Codevine), a passionate front-end developer focused on building responsive, modern websites."
-      />
+
 
       <div id="about" className="about-container">
         <div className="about-detail">

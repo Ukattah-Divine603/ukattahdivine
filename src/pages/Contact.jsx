@@ -1,14 +1,10 @@
 import ContactForm from "../components/ContactForm";
 import Icon from "../components/Icon";
-import SEO from '../components/SEO'
+
 
 export default function Contact() {
     return(<>
 
-   <SEO
-        title="About"
-        description="Learn more about Ukattah Divine (Codevine), a passionate front-end developer focused on building responsive, modern websites."
-      />
 
     <div id="contact" className="contact-section">
         <h2>Get In Touch!</h2>
