@@ -752,10 +752,11 @@ footer {
     align-items: center;
     justify-content: top;
 img{
-object-fit: fill;
-object-position: top;
+object-fit: cover;
+aspect-ratio: 4/4;
+object-position: center;
 width: 100%;
-margin-top: 6rem;
+
 }
 }
 
