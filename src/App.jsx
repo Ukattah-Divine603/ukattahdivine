@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import Aside from './components/Aside'
-import Home from './components/Home'
-import logo from './images/CODEVINE-LOGO-BLACK.png' // replace with your logo path
-
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Aside from "./components/Aside";
+import Home from "./components/Home";
+import logo from "/public/images//CODEVINE-LOGO-BLACK.png"; // replace with your logo path
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000) // 2 seconds preloader
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds preloader
+    return () => clearTimeout(timer);
+  }, []);
 
   if (loading) {
     return (
@@ -21,7 +20,7 @@ function App() {
           <img src={logo} alt="Logo" />
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -32,7 +31,7 @@ function App() {
         <Home />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

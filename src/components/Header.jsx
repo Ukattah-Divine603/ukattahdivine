@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "/src/images/CODEVINE-LOGO-BLACK.png";
+import logo from "/public/images/CODEVINE-LOGO-BLACK.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,6 @@ function Header() {
         <a href="#contact" onClick={() => setIsOpen(false)}>
           Contact
         </a>
-        
       </nav>
     </header>
   );
