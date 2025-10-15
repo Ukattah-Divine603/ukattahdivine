@@ -7,6 +7,7 @@ import discord from "/public/images/discord-clone.png";
 import product from "/public/images/product-showcase.png";
 import calculator from "/public/images/calculator.png";
 import portfolio from "/public/images/portfolio-final-version.png";
+import voxscribe from "/public/images/voxscribe.jpeg";
 import db from "/public/images/db.png";
 import dbs from "/public/images/db-1.png";
 export default function Projects() {
@@ -15,6 +16,13 @@ export default function Projects() {
       <div id="projects" className="project-container">
         <h1>My Projects</h1>
         <div className="project-grid">
+          <ProCard
+            image={voxscribe}
+            title="VOXSCRIBE"
+            description="An AI-powered voice transcription web app that converts speech to text in real time, built with React.js for interactivity and a clean, responsive UI, enabling seamless audio uploads and instant text output.."
+            framework="NEXT.JS | CSS"
+            url="https://google.com"
+          />
           <ProCard
             image={portfolio}
             title="FINAL PORTFOLIO"
