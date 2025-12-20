@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export default function ContactForm() {
-    return (
-        <div className="contact-form">
-            <form
+  return (
+    <div className="contact-form autoSlide">
+      <form
         action="https://formspree.io/f/mzzjvdpb"
         method="POST"
         className="contact-form"
@@ -52,6 +52,6 @@ export default function ContactForm() {
           Send Message
         </button>
       </form>
-        </div>
-    )
+    </div>
+  );
 }
