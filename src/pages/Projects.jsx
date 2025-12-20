@@ -14,8 +14,11 @@ export default function Projects() {
   return (
     <>
       <div id="projects" className="project-container">
-        <h1>My Projects</h1>
-        <div className="project-grid">
+        <div>
+          <h1 className="autoSlide">My Projects</h1>
+        </div>
+
+        <div className="project-grid ">
           <ProCard
             image={voxscribe}
             title="VOXSCRIBE"

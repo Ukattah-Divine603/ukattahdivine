@@ -2,7 +2,7 @@ import Button from "./Button";
 import logo from "/public/images/cv.png";
 
 import Card from "./Card";
-import profile from "/public/images/profile-picture.jpeg";
+import profile from "/public/images/droy.jpg";
 
 export default function Aside() {
   return (
@@ -33,7 +33,7 @@ export default function Aside() {
         </div>
         <div className="side-icons">
           {/* GitHub icon */}
-          <div className="tec-icon" aria-label="GitHub">
+          <div className="tec-icon autoRotate" aria-label="GitHub">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* HTML Icon */}
-          <div className="tec-icon" aria-label="HTML">
+          <div className="tec-icon autoRotate " aria-label="HTML">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* CSS Icon */}
-          <div className="tec-icon" aria-label="CSS">
+          <div className="tec-icon autoRotate " aria-label="CSS">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -69,7 +69,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* JAVASCRIPT Icon */}
-          <div className="tec-icon" aria-label="JAVASCRIPT">
+          <div className="tec-icon autoRotate " aria-label="JAVASCRIPT">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* React */}
-          <div className="tec-icon" aria-label="REACT.JS">
+          <div className="tec-icon autoRotate" aria-label="REACT.JS">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* TAILWIND CSS */}
-          <div className="tec-icon" aria-label="TAILWIND CSS">
+          <div className="tec-icon autoRotate" aria-label="TAILWIND CSS">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -105,7 +105,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* WORDPRESS */}
-          <div className="tec-icon" aria-label="WORDPRESS">
+          <div className="tec-icon autoRotate" aria-label="WORDPRESS">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -117,7 +117,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* FireBase */}
-          <div className="tec-icon" aria-label="FIREBASE">
+          <div className="tec-icon autoRotate" aria-label="FIREBASE">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -129,7 +129,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* SupaBase */}
-          <div className="tec-icon" aria-label="SUPABASE">
+          <div className="tec-icon autoRotate" aria-label="SUPABASE">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -141,7 +141,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* Linux */}
-          <div className="tec-icon" aria-label="LINUX">
+          <div className="tec-icon autoRotate" aria-label="LINUX">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -153,7 +153,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* Terminal */}
-          <div className="tec-icon" aria-label="TERMINAL">
+          <div className="tec-icon autoRotate" aria-label="TERMINAL">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -165,7 +165,7 @@ export default function Aside() {
             </svg>
           </div>
           {/* VSCODE */}
-          <div className="tec-icon" aria-label="VSCODE">
+          <div className="tec-icon autoRotate" aria-label="VSCODE">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="96"

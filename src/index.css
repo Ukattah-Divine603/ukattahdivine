@@ -252,6 +252,20 @@ header {
   height: 120px;
 }
 
+.autoRotate {
+  animation: AutorotateAnimation;
+  animation-timeline: view();
+}
+
+@keyframes AutorotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Logo in the center */
 .spinner img {
   width: 5rem;
@@ -357,10 +371,72 @@ header {
 
 .side-icons {
   display: flex;
+  margin-top: 5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
+}
+
+.autoShow {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.autoSlide {
+  animation: text-slide both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-slide {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.autoShift {
+  animation: text-shift both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-shift {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .mobile {
@@ -391,9 +467,15 @@ header {
 }
 
 .card {
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 0.5rem;
   padding: 1rem;
+}
+
+.img-cont {
+  width: 100%;
+  aspect-ratio: 4/4;
+  border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .img-cont img {
@@ -401,8 +483,9 @@ header {
   height: 100%;
   object-fit: cover;
   border-radius: 0.4rem;
+
   border: 1px solid rgb(255, 255, 255);
-  object-position: top;
+  object-position: center;
 }
 
 .img-cont img:hover {
@@ -478,9 +561,13 @@ header {
   input,
   textarea {
     padding: 0.5rem;
+    margin-top: 0.5rem;
+    outline: none;
     border-radius: 0.3rem;
-    border: 1px solid rgb(197, 197, 197);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-weight: 100;
+    border: none;
+    background-color: transparent;
     font-size: 1rem;
     width: 100%;
   }
@@ -491,7 +578,8 @@ header {
   button {
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
-    border: 1px solid rgb(0, 0, 0);
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: transparent;
     color: rgb(0, 0, 0);
     font-weight: 100;
@@ -527,7 +615,7 @@ header {
 
 .experience {
   margin-top: 4rem;
-  border: 1px solid rgb(197, 197, 197);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 0.5rem;
   padding: 1rem;
   width: 100%;
@@ -558,7 +646,7 @@ header {
 
 .availability {
   margin-top: 4rem;
-  border: 1px solid rgb(197, 197, 197);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 0.5rem;
   padding: 1rem;
   width: 100%;
@@ -590,9 +678,14 @@ header {
   padding-top: 7rem;
 
   justify-content: left;
+
   h1 {
     font-weight: 400;
-    text-align: left;
+    text-align: center;
+  }
+  hr {
+    width: 8rem;
+    align-items: center;
   }
 }
 
@@ -610,18 +703,20 @@ header {
   justify-content: top;
   max-width: 350px;
   gap: 1rem;
+  border-radius: 1rem;
   aspect-ratio: 4/4;
-  min-height: 30rem;
+  min-height: 27rem;
   padding: 1rem;
-  border: 1px solid rgb(197, 197, 197);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   .pro-image {
     overflow: hidden;
   }
   img {
     width: 100%;
     object-fit: cover;
-    border: 1px solid rgb(184, 184, 184);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     object-position: center;
+    border-radius: 1rem;
   }
   .pro-title {
     font-size: 1.4rem;
@@ -657,7 +752,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: left;
+  justify-content: center;
   padding-top: 2rem;
 }
 
@@ -795,7 +890,8 @@ footer {
     justify-content: top;
     img {
       object-fit: cover;
-      aspect-ratio: 4/4;
+      /* aspect-ratio: 4/4; */
+      margin-top: -2rem;
       object-position: center;
       width: 100%;
     }

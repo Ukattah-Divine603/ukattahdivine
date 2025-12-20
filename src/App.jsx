@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import BackgroundVideo from "./components/BackgroundVideo";
 import Header from "./components/Header";
 import Aside from "./components/Aside";
 import Home from "./components/Home";
-import logo from "/public/images//CODEVINE-LOGO-BLACK.png"; // replace with your logo path
+import logo from "/public/images/mas.jpg"; // replace with your logo path
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+      <BackgroundVideo />
       <Header />
       <div className="body-components">
         <Aside />

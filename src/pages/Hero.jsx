@@ -1,5 +1,5 @@
 import Frameworks from "../components/Frameworks";
-import profile from "/public/images/profile-picture.jpeg";
+import profile from "/public/images/droy.jpg";
 function Hero() {
   return (
     <>
@@ -70,6 +70,7 @@ function Hero() {
               <Frameworks name="TAILWIND CSS" />
               <Frameworks name="GIT" />
               <Frameworks name="WORDPRESS" />
+              {/* <Frameworks name="UI/UX" /> */}
             </div>
           </div>
         </div>

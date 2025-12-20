@@ -3,24 +3,21 @@ import Icon from "../components/Icon";
 export default function About() {
   return (
     <>
-
-
-
-      <div id="about" className="about-container">
+      <div id="about" className="about-container ">
         <div className="about-detail">
-          <h4>About Me</h4>
-          <p>
+          <h4 className="autoShow">About Me</h4>
+          <p className="autoShow">
             I build fast, accessible user interfaces with a focus on clarity. I
             like to keep interactions predictable and animations meaningful.
           </p>
-          <ul>
-            <li>Strong HTML/CSS fundamentals</li>
-            <li>Component-driven architecture</li>
-            <li>Responsive-first, mobile-aware layouts</li>
+          <ul className="autoShow">
+            <li className="autoShow">Strong HTML/CSS fundamentals</li>
+            <li className="autoShow">Component-driven architecture</li>
+            <li className="autoShow">Responsive-first, mobile-aware layouts</li>
           </ul>
 
           <div className="social-icon">
-            <a href="https://github.com/ukattah-divine603">
+            <a className="autoShow" href="https://github.com/ukattah-divine603">
               <Icon
                 svg={
                   <svg
@@ -35,7 +32,10 @@ export default function About() {
                 }
               />
             </a>
-            <a href="https://linkedin.com/in/ukattah-divine-79146a333">
+            <a
+              className="autoShow"
+              href="https://linkedin.com/in/ukattah-divine-79146a333"
+            >
               <Icon
                 svg={
                   <svg
@@ -50,7 +50,10 @@ export default function About() {
                 }
               />
             </a>
-            <a href="https://x.com/DivineUkattah?t=3dG3HzM0zi1TFx_Y5S93fQ&s=08">
+            <a
+              className="autoShow"
+              href="https://x.com/DivineUkattah?t=3dG3HzM0zi1TFx_Y5S93fQ&s=08"
+            >
               <Icon
                 svg={
                   <svg
@@ -65,7 +68,7 @@ export default function About() {
                 }
               />
             </a>
-            <a href="https://wa.me/2347078747186">
+            <a className="autoShow" href="https://wa.me/2347078747186">
               <Icon
                 svg={
                   <svg
@@ -83,24 +86,26 @@ export default function About() {
           </div>
         </div>
         <div className="experience">
-          <h6>EXPERIENCE | 1.6 YEARS | 10+ COMPLETED PROJECTS</h6>
-          <p>Front-End Developer</p>
-          <h6>2024 - Present</h6>
-          <h5>
+          <h6 className="autoSlide">
+            EXPERIENCE | 1.6 YEARS | 10+ COMPLETED PROJECTS
+          </h6>
+          <p className="autoSlide">Front-End Developer</p>
+          <h6 className="autoSlide">2024 - Present</h6>
+          <h5 className="autoSlide">
             Built landing pages and small apps focused on conversion and
             performance.
           </h5>
           <hr />
-          <p>WordPress Developer</p>
-          <h6>2024 - Present</h6>
-          <h5>
+          <p className="autoSlide">WordPress Developer</p>
+          <h6 className="autoSlide">2024 - Present</h6>
+          <h5 className="autoSlide">
             Built landing pages and small apps focused on conversion and
             performance.
           </h5>
           <hr />
-          <p>YouTube Content Creator</p>
-          <h6>2023 - Present</h6>
-          <h5>
+          <p className="autoSlide">YouTube Content Creator</p>
+          <h6 className="autoSlide">2023 - Present</h6>
+          <h5 className="autoSlide">
             Built landing pages and small apps focused on conversion and
             performance.
           </h5>
