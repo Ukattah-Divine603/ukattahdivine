@@ -25,13 +25,13 @@ header {
   background-color: rgba(228, 228, 228, 0.384);
   border-radius: 6rem;
   backdrop-filter: blur(10px);
-  margin: 1rem 3rem 1rem 28rem;
+  margin: 1rem 3rem 1rem 25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  font-family: Open Sans;
+  font-family: Raleway;
   box-shadow: 0 0 10px #7d7b83;
   transition: 0.5s ease-in-out;
 }
@@ -137,6 +137,7 @@ header {
 .black-cover {
   display: flex;
   flex-direction: row;
+  font-family: Raleway;
   gap: 6rem;
   justify-content: space-between;
   align-items: center;
@@ -147,9 +148,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  h3 {
-    margin-top: -1rem;
-  }
+  font-family: Raleway;
+
   h4 {
     font-weight: 100;
   }
@@ -160,6 +160,50 @@ header {
 
 .left-sed .framework-list {
   margin-top: -0.5rem;
+}
+
+.head1 {
+  font-weight: 200;
+  font-family: Raleway;
+  font-size: 2rem;
+
+  margin-bottom: -1.3rem;
+}
+
+.head2 {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  font-weight: 200;
+
+  div {
+    width: 0.6rem;
+    display: flex;
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: -0.5rem;
+    margin-top: -4rem;
+    height: 0.6rem;
+    color: rgb(0, 182, 0);
+    background-color: rgb(0, 182, 0);
+    border-radius: 50%;
+    box-shadow: rgb(93, 211, 15) 0px 3px 8px;
+    z-index: 2;
+
+    position: absolute;
+  }
+}
+
+.head3 {
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .social-icons {
@@ -186,7 +230,8 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 0.3rem;
-    border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     cursor: pointer;
     a {
       color: rgb(0, 0, 0);
@@ -198,6 +243,7 @@ header {
   .icon:hover {
     background-color: black;
     transition: 0.1s ease-in-out;
+    box-shadow: none;
     a {
       color: white;
     }
@@ -302,10 +348,19 @@ header {
   }
 }
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .aside {
   width: 100%;
   aspect-ratio: 16/9;
-  position: relative;
+  position: sticky;
   padding: 1rem;
 
   display: flex;
@@ -366,6 +421,7 @@ header {
 
 .img-cont {
   aspect-ratio: 4/3;
+
   overflow: hidden;
 }
 
@@ -375,19 +431,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 7.8rem;
 }
 
 .autoShow {
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 100vh;
+  animation-range: entry 10% cover 100vh;
 }
 
 @keyframes text-appear {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -398,13 +454,13 @@ header {
 .autoSlide {
   animation: text-slide both;
   animation-timeline: view();
-  animation-range: entry 20% cover 100vh;
+  animation-range: entry 10% cover 90vh;
 }
 
 @keyframes text-slide {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -453,16 +509,20 @@ header {
   justify-content: center;
 }
 
+/* Studio-standard product photography of a single product centered on a seamless white cloth background with soft natural fabric texture, wrinkle-free backdrop and a gentle curve, evenly diffused professional studio lighting using two soft light sources at 45-degree angles, clean soft shadows under the product, high detail, sharp focus, realistic materials, neutral color balance, minimal aesthetic, premium commercial look, ultra-clean composition, photorealistic, e-commerce hero shot, 8k quality — no harsh shadows, no blown highlights, no overexposed whites, no clutter, no text or logos in the background, no people or hands, no reflections, no color cast, no noise, no blur, no distortion, no messy fabric or creases, no gradients, no vignette, no cinematic or dramatic lighting */
+
 .frameworks {
-  padding: 0.5rem 1rem;
   width: fit-content;
   height: fit-content;
-  border-radius: 0.3rem;
-  border: none;
-  border: 1px solid rgb(0, 0, 0);
-  background-color: transparent;
-  color: rgb(0, 0, 0);
-  font-weight: 100;
+  border-radius: 0.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  font-weight: 200;
   cursor: pointer;
 }
 
@@ -485,7 +545,7 @@ header {
   border-radius: 0.4rem;
 
   border: 1px solid rgb(255, 255, 255);
-  object-position: center;
+  object-position: top;
 }
 
 .img-cont img:hover {
@@ -578,6 +638,11 @@ header {
   }
   button {
     padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
     border-radius: 0.3rem;
     border: none;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -602,26 +667,29 @@ header {
   padding-top: 4rem;
   h4 {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 100;
   }
   p {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.2rem;
+    font-family: Raleway;
   }
   ul {
     list-style-type: disc;
     font-weight: 100;
     font-size: 1rem;
+    font-family: Raleway;
   }
 }
 
 .experience {
   margin-top: 4rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.637);
   width: 100%;
+  border-radius: 0.5rem;
   backdrop-filter: blur(10px);
   height: auto; /* automatically fits content */
   display: flex;
@@ -635,6 +703,7 @@ header {
   }
   hr {
     height: 0;
+
     border: none;
     border-top: 1px solid #c0c0c0;
   }
@@ -716,7 +785,8 @@ header {
   backdrop-filter: blur(10px);
   min-height: 27rem;
   padding: 1rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   .pro-image {
     overflow: hidden;
   }
@@ -740,7 +810,8 @@ header {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
-    border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: transparent;
     color: rgb(0, 0, 0);
     font-weight: 100;
@@ -754,6 +825,7 @@ header {
   a:hover {
     background-color: black;
     color: white;
+    box-shadow: none;
     transition: 0.5s ease-in-out;
   }
 }
@@ -892,6 +964,7 @@ footer {
   .mobile-image {
     border: 1px solid rgb(197, 197, 197);
     width: 15rem;
+    background-color: black;
     border: 1px solid rgba(75, 75, 75, 0.822);
     height: 15rem;
     border-radius: 50%;
@@ -901,9 +974,9 @@ footer {
     justify-content: top;
     img {
       object-fit: cover;
-      /* aspect-ratio: 4/4; */
-      margin-top: -2rem;
-      object-position: center;
+      /* asmpect-ratio: 4/4; */
+      margin-bottom: -6rem;
+      object-position: top;
       width: 100%;
     }
   }

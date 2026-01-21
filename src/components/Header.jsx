@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "/public/images/mas.jpg";
+import logo from "/public/images/CODEVINE-LOGO-BLACK.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);

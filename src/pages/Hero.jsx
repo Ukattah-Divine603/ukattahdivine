@@ -1,5 +1,5 @@
 import Frameworks from "../components/Frameworks";
-import profile from "/public/images/droy.jpg";
+import profile from "/public/images/pro.png";
 function Hero() {
   return (
     <>
@@ -15,11 +15,12 @@ function Hero() {
               <br />
               HAJIMEMASHITE!
             </p>
-            <h1>My Name Is</h1>
-            <h3>
-              Ukattah Divine
-              <br />A Front-End Developer
+            <h1 className="head1">My Name Is</h1>
+            <h3 className="head2">
+              <div></div>
+              <p> Ukattah Divine </p>
             </h3>
+            <h2 className="head3">A Front-End Developer</h2>
             <p>
               Learning never ends, and I am dedicated to growing as a Front-End
               Developer. I have a solidfoundation in HTML, CSS, and JavaScript,
