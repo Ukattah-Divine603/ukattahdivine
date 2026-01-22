@@ -20,7 +20,7 @@ function Hero() {
               <div></div>
               <p> Ukattah Divine </p>
             </h3>
-            <h2 className="head3">A Front-End Developer</h2>
+            <h2 className="head3">A Front-End Developer / AI Enthusiast</h2>
             <p>
               Learning never ends, and I am dedicated to growing as a Front-End
               Developer. I have a solidfoundation in HTML, CSS, and JavaScript,
