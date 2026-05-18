@@ -9,6 +9,7 @@ import calculator from "/public/images/calculator.png";
 import portfolio from "/public/images/portfolio-final-version.png";
 import voxscribe from "/public/images/voxscribe.jpeg";
 import db from "/public/images/db.png";
+import zombie from "/public/images/dodge-zombie.png";
 
 export default function Projects() {
   return (
@@ -19,6 +20,13 @@ export default function Projects() {
         </div>
 
         <div className="project-grid ">
+          <ProCard
+            image={zombie}
+            title="DODGE ZOMBIES"
+            description="Dodge Zombies is a fast-paced browser survival game where players dodge endless waves of zombies and survive as long as possible through quick reflexes and addictive gameplay. 🧟🔥"
+            framework="HTML | CSS | JAVASCRIPT"
+            url="https://dodge-zombies.vercel.app/"
+          />
           <ProCard
             image={voxscribe}
             title="VOXSCRIBE"
