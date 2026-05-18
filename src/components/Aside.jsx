@@ -1,6 +1,3 @@
-import Button from "./Button";
-import logo from "/public/images/cv.png";
-
 import Card from "./Card";
 import profile from "/public/images/pro.png";
 

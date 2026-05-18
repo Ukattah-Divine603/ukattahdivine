@@ -9,7 +9,7 @@ import calculator from "/public/images/calculator.png";
 import portfolio from "/public/images/portfolio-final-version.png";
 import voxscribe from "/public/images/voxscribe.jpeg";
 import db from "/public/images/db.png";
-import dbs from "/public/images/db-1.png";
+
 export default function Projects() {
   return (
     <>
@@ -34,11 +34,11 @@ export default function Projects() {
             url="https://google.com"
           />
           <ProCard
-            image={dbs}
+            image={db}
             title="DIVINEBASE SOLAR"
             description="A sleek landing page for a solar distribution company, highlighting products and services using React.js for efficient rendering, HTML for layout, and CSS for modern, eco-friendly design."
             framework="REACT.JS | HTML | CSS"
-            url="https://google.com"
+            url="https://divinebasesolar.com"
           />
           <ProCard
             image={picky}
