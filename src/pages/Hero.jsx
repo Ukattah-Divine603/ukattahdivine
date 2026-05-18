@@ -23,12 +23,13 @@ function Hero() {
             <h2 className="head3">A Front-End Developer / AI Enthusiast</h2>
             <p>
               Learning never ends, and I am dedicated to growing as a Front-End
-              Developer. I have a solidfoundation in HTML, CSS, and JavaScript,
-              and I am continuously expanding my skills. My goal is to become a
-              top Front-End Developer and eventually transition into Full Stack
-              development. I am passionate about building responsive,
-              user-friendly web applications and staying current with industry
-              trends. So Help Me God!
+              Developer. I have a solid foundation in HTML, CSS, JavaScript,
+              React.JS, Tailwind CSS, Next.JS, and GIT, and I am continuously
+              expanding my skills. My goal is to become a top Front-End
+              Developer and eventually transition into Full Stack development. I
+              am passionate about building responsive, user-friendly web
+              applications and staying current with industry trends. So Help Me
+              God!
             </p>
             <div className="buttons mobile">
               <a
