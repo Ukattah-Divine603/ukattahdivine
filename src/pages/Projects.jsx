@@ -6,10 +6,11 @@ import todo from "/public/images/todo.png";
 import discord from "/public/images/discord-clone.png";
 import product from "/public/images/product-showcase.png";
 import calculator from "/public/images/calculator.png";
-import portfolio from "/public/images/portfolio-final-version.png";
+import portfolio from "/public/images/port.png";
 import voxscribe from "/public/images/voxscribe.jpeg";
 import db from "/public/images/db.png";
 import zombie from "/public/images/dodge-zombie.png";
+import ai from "/public/images/ai.png";
 
 export default function Projects() {
   return (
@@ -28,18 +29,11 @@ export default function Projects() {
             url="https://dodge-zombies.vercel.app/"
           />
           <ProCard
-            image={voxscribe}
-            title="VOXSCRIBE"
-            description="An AI-powered voice transcription web app that converts speech to text in real time, built with React.js for interactivity and a clean, responsive UI, enabling seamless audio uploads and instant text output.."
-            framework="NEXT.JS | CSS"
-            url="https://google.com"
-          />
-          <ProCard
-            image={portfolio}
-            title="FINAL PORTFOLIO"
-            description="A dynamic personal portfolio website showcasing skills and projects, built with React.js for interactive components, alongside HTML for structure and CSS for responsive styling."
-            framework="REACT.JS | HTML | CSS"
-            url="https://google.com"
+            image={ai}
+            title="DEVINE"
+            description="DEVINE is a sleek AI-powered chat platform that delivers fast, human-like conversations through smooth animations, real-time responses, and an immersive messaging experience designed for seamless interaction. 🤖✨"
+            framework="TYPEBOT"
+            url="https://dodge-zombies.vercel.app/"
           />
           <ProCard
             image={db}
@@ -49,25 +43,25 @@ export default function Projects() {
             url="https://divinebasesolar.com"
           />
           <ProCard
+            image={portfolio}
+            title="FINAL PORTFOLIO"
+            description="A dynamic personal portfolio website showcasing skills and projects, built with React.js for interactive components, alongside HTML for structure and CSS for responsive styling."
+            framework="REACT.JS | HTML | CSS"
+            url="https://ukattahdivine-codevine.vercel.app/"
+          />
+          <ProCard
+            image={voxscribe}
+            title="VOXSCRIBE"
+            description="An AI-powered voice transcription web app that converts speech to text in real time, built with React.js for interactivity and a clean, responsive UI, enabling seamless audio uploads and instant text output.."
+            framework="NEXT.JS | CSS"
+            url="https://voxscribe-j5ti.vercel.app/"
+          />
+          <ProCard
             image={picky}
             title="PICKY"
             description="An engaging ecommerce website landing page designed to promote online shopping, developed with HTML for core structure, CSS for visual appeal, and JavaScript for interactive elements like carousels."
             framework="HTML | CSS | JAVASCRIPT"
             url="https://ukattah-divine603.github.io/Picky/"
-          />
-          <ProCard
-            image={savery}
-            title="SAVERY HAVEN"
-            description="A welcoming restaurant website featuring menus, reservations, and ambiance visuals, crafted using HTML for content organization, CSS for appetizing layouts, and JavaScript for dynamic features like image sliders"
-            framework="HTML | CSS | JAVASCRIPT"
-            url="https://ukattah-divine603.github.io/SAVERY-HAVEN/"
-          />
-          <ProCard
-            image={graph}
-            title="GRAPHTY"
-            description="A professional medical website landing page focused on healthcare services and patient info, implemented with HTML for accessibility, CSS for clean typography, and JavaScript for smooth navigation."
-            framework="HTML | CSS | JAVASCRIPT"
-            url="https://ukattah-divine603.github.io/Graphty/"
           />
           <ProCard
             image={todo}
@@ -91,11 +85,18 @@ export default function Projects() {
             url="https://ukattah-divine603.github.io/Calculator-App/"
           />
           <ProCard
-            image={db}
-            title="DIVINEBASE SOLAR"
-            description="A customizable WordPress template tailored for a solar distribution company, enabling easy content management, blog integration, and SEO-optimized pages for promoting renewable energy solutions."
-            framework="WORDPRESS"
-            url="https://mintcream-stingray-665207.hostingersite.com/"
+            image={savery}
+            title="SAVERY HAVEN"
+            description="A welcoming restaurant website featuring menus, reservations, and ambiance visuals, crafted using HTML for content organization, CSS for appetizing layouts, and JavaScript for dynamic features like image sliders"
+            framework="HTML | CSS | JAVASCRIPT"
+            url="https://ukattah-divine603.github.io/SAVERY-HAVEN/"
+          />
+          <ProCard
+            image={graph}
+            title="GRAPHTY"
+            description="A professional medical website landing page focused on healthcare services and patient info, implemented with HTML for accessibility, CSS for clean typography, and JavaScript for smooth navigation."
+            framework="HTML | CSS | JAVASCRIPT"
+            url="https://ukattah-divine603.github.io/Graphty/"
           />
           <ProCard
             image={product}
